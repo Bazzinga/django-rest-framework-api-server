@@ -14,8 +14,8 @@ admin.autodiscover()
 urlpatterns = patterns('',
     url(r'^admin/', include(admin.site.urls)),
     url(r'^api/', include(router.urls)),
-    url(r'^apiauth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^apiauth/token/', 'rest_framework.authtoken.views.obtain_auth_token'),
+    url(r'^api/auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^api/auth/token/', 'rest_framework.authtoken.views.obtain_auth_token'),
 )
 
 if settings.DEBUG:
