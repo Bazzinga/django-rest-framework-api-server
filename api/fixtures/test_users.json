@@ -1,0 +1,38 @@
+[
+    {
+        "pk": 1,
+        "model": "auth.user",
+        "fields": {
+            "username": "admin",
+            "first_name": "",
+            "last_name": "",
+            "is_active": true,
+            "is_superuser": true,
+            "is_staff": true,
+            "last_login": "2012-08-13T20:03:31.549Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "pbkdf2_sha256$10000$wAY2GUCB7bJb$GNkTlFUT00GU2DvV95pKisrFK+wXvXPlzX63jjoGpbs=",
+            "email": "admin@prairiedogg.com",
+            "date_joined": "2012-08-09T02:42:18.617Z"
+        }
+    },
+    {
+        "pk": 2,
+        "model": "auth.user",
+        "fields": {
+            "username": "Ronald_McDonald",
+            "first_name": "Ronald",
+            "last_name": "McDonald",
+            "is_active": true,
+            "is_superuser": false,
+            "is_staff": false,
+            "last_login": "2012-08-09T04:56:59.756Z",
+            "groups": [],
+            "user_permissions": [],
+            "password": "",
+            "email": "",
+            "date_joined": "2012-08-09T04:56:59.756Z"
+        }
+    }
+]
