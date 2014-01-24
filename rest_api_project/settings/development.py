@@ -38,6 +38,5 @@ LOGGING = {
 }
 
 STATIC_URL = '/static/'
-STATIC_ROOT = 'staticfiles'
 STATICFILES_STORAGE = 'django.contrib.staticfiles.storage.StaticFilesStorage'
 
