@@ -2,7 +2,7 @@ from django_webtest import WebTest
 from django.contrib.auth.models import User
 
 
-class APIGetApiKey(WebTest):
+class LogInAndGetUserList(WebTest):
 
     def testLoginAnGetUsers(self):
         User.objects.create_user("prairiedogg", **{"password": "my_$pecial_password"})
@@ -20,6 +20,7 @@ class APIGetApiKey(WebTest):
                                       headers=headers,
                                       status=200)
         number_of_users = len(users_response.json)
+        self.assertEqual(number_of_users, 1);
         first_user = users_response.json[0]
 
         self.assertEqual(first_user["username"], "prairiedogg")
