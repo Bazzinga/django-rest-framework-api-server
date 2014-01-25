@@ -1,1 +1,1 @@
-from .api_tests import *
+from .test_login import *

@@ -2,7 +2,7 @@ from django_webtest import WebTest
 from django.contrib.auth.models import User
 
 
-class LogInAndGetUserList(WebTest):
+class TestLogInAndGetUserList(WebTest):
 
     def testLoginAnGetUsers(self):
         User.objects.create_user("prairiedogg", **{"password": "my_$pecial_password"})
