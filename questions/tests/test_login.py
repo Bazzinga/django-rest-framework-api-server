@@ -9,14 +9,14 @@ class TestLogInAndGetUserList(WebTest):
 
         username_and_password = {"username": "prairiedogg",
                                  "password": "my_$pecial_password"}
-        login_response = self.app.post_json('/api/auth/token/',
+        login_response = self.app.post_json('/api/v1/auth/token/',
                                             username_and_password,
                                             status=200)
         token = login_response.json_body['token']
 
         headers = {'Authorization': str('Token %s' % token)}
 
-        users_response = self.app.get('/api/users/',
+        users_response = self.app.get('/api/v1/users/',
                                       headers=headers,
                                       status=200)
         number_of_users = len(users_response.json)

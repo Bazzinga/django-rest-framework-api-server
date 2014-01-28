@@ -7,7 +7,7 @@ router.register(r'users', UserViewSet)
 
 
 urlpatterns = patterns('',
-    url(r'^auth/', include('rest_framework.urls', namespace='rest_framework')),
-    url(r'^auth/token/', 'rest_framework.authtoken.views.obtain_auth_token'),
-    url(r'^', include(router.urls))
+    url(r'^v1/auth/', include('rest_framework.urls', namespace='rest_framework')),
+    url(r'^v1/auth/token/', 'rest_framework.authtoken.views.obtain_auth_token'),
+    url(r'^v1/', include(router.urls))
 )

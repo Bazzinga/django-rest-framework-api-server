@@ -30,7 +30,7 @@ INSTALLED_APPS = (
     'storages',
     'rest_framework',
     'rest_framework.authtoken',
-    'api',
+    'questions',
 )
 
 
@@ -43,9 +43,9 @@ MIDDLEWARE_CLASSES = (
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 )
 
-ROOT_URLCONF = 'rest_api_project.urls'
+ROOT_URLCONF = 'questions_api_server.urls'
 
-WSGI_APPLICATION = 'rest_api_project.wsgi.application'
+WSGI_APPLICATION = 'questions_api_server.wsgi.application'
 
 DATABASES = {'default': dj_database_url.config()}
 
